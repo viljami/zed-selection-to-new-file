@@ -1,0 +1,11 @@
+id = "zed-move-selection-to-new-file"
+name = "Selection to new file"
+version = "0.0.1"
+schema_version = 1
+authors = ["Viljami Peltola <viljami.peltola@iki.fi>"]
+description = "Move selected text to a new file"
+repository = "https://github.com/viljai/zed-move-selection-to-new-file"
+
+[slash_commands.move]
+description = "move selection to a new file"
+requires_argument = false
