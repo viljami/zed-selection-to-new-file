@@ -19,20 +19,20 @@ Join us in enhancing coding efficiency and organization!
 
 ## Implementation approaches
 
-1. Custom keymap (not working)
-2. Task & custom keymap
-2. Extension
+1. [Custom key bindigs](https://zed.dev/docs/key-bindings) (not suitable solution)
+2. [Task & custom keymap](https://zed.dev/docs/tasks#custom-keybindings-for-tasks)
+2. [Extension](https://zed.dev/docs/extensions/developing-extensions)
 
 ### Custom Keymap
 
-With `workspace::SendKeystrokes` we can chain commands to be triggered with a
+With `workspace::SendKeystrokes` we can [chain commands](https://zed.dev/docs/key-bindings#remapping-keys) to be triggered with a
 custom key combination `cmd-x cmd-n cmd-v`.
 
 1. `cmd-x` cut text
 2. `cmd-n` new file
 3. `cmd-v` paste text
 
-The problem here is that an asynchronous operation is completed after the text is
+[The limitation](https://zed.dev/docs/key-bindings#remapping-keys) here is that an asynchronous operation is completed after the text is
 pasted. Which leads the text being pasted to the original file like no cut operation
 was done in the first place and the new file resulting empty.
 
@@ -49,13 +49,13 @@ Implementation for `keymap.json` file:
 ]
 ```
 
-### Task & Custom Keymap
+### [Task & Custom Keymap](https://zed.dev/docs/tasks#custom-keybindings-for-tasks)
 
 Not implemented.
 
-### Extension
+### [Extension](https://zed.dev/docs/extensions/developing-extensions)
 
-Meant for Assistant Panel which already have great context filling commands.
+Meant for Assistant Panel which have great context commands called [Assistant Commands](https://zed.dev/docs/assistant/commands).
 Might not be the right approach.
 
 [Stub only](./src/lib.rs)
