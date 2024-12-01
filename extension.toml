@@ -1,5 +1,5 @@
-id = "zed-move-selection-to-new-file"
-name = "Selection to new file"
+id = "selection-to-new-file"
+name = "Selection to New File"
 version = "0.0.1"
 schema_version = 1
 authors = ["Viljami Peltola <viljami.peltola@iki.fi>"]
